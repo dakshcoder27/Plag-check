@@ -10,3 +10,4 @@ int solve(vector<int> nums) {
     }
     return maxSoFar;
 }
+void solve1() {}
