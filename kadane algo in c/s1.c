@@ -1,9 +1,5 @@
 #include <stdio.h>
-
-int max(int a, int b) {
-    return (a > b) ? a : b;
-}
-
+#include <stdlib.h>
 int maxSubArray(int* nums, int numsSize) {
     int maxSum = nums[0];
     int currentSum = nums[0];
@@ -15,6 +11,11 @@ int maxSubArray(int* nums, int numsSize) {
 
     return maxSum;
 }
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+
 
 int main() {
     int nums[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
@@ -25,3 +26,5 @@ int main() {
 
     return 0;
 }
+
+
